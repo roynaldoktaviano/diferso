@@ -9,20 +9,31 @@
        <!-- Navbar -->
     <div class="container mx-auto px-9 py-4">
         <div class="grid grid-cols-12 gap-4">
-            <a href="/"><img src="img/difw.png" alt="" class="h-12"></a>
-            <div class="col-span-11">
-                <div class="grid grid-cols-4 gap-4 text-white mb-2">
-                    <div class="text-center">
-                        <a href="" class="text-center">About</a>
+            <div class="col-span-2 md:col-span-1">
+                <a href="/"><img src="img/difw.png" alt="" class="h-full w-full"></a>
+            </div>
+            <div class="col-span-10">
+                <div class="grid grid-cols-5 gap-4 text-white mb-2">
+                    <div class="desktop-menu grid grid-cols-4 col-start-2 col-span-4 hidden md:contents">
+                        <div class="text-center">
+                            <a href="" class="text-center">About</a>
+                        </div>
+                        <div class="text-center">
+                            <a href="" class="text-center">Services</a>
+                        </div>
+                        <div class="text-center">
+                            <a href="" class="text-center">Portfolio</a>
+                        </div>
+                        <div class="text-center">
+                            <a href="" class="text-center">Contact</a>
+                        </div>
                     </div>
-                    <div class="text-center">
-                        <a href="" class="text-center">Services</a>
-                    </div>
-                    <div class="text-center">
-                        <a href="" class="text-center">Portfolio</a>
-                    </div>
-                    <div class="text-center">
-                        <a href="" class="text-center">Contact</a>
+                    <div class="block md:hidden">
+                        <a class="pointer hamburger-menu">
+                        <span class="w-8 h-1 rounded bg-white block items-center ml-auto"></span>
+                        <span class="w-8 h-1 rounded bg-white block items-center ml-auto mt-1"></span>
+                        <span class="w-8 h-1 rounded bg-white block items-center ml-auto mt-1"></span>
+                        </a>
                     </div>
                 </div>
                 <hr>
@@ -34,7 +45,7 @@
     <section>
         <div class="mt-8 grid grid-cols-12">
             <div class="container mx-auto px-9 py-4 col-span-11">
-                <h1 class="text-white text-[60px] font-bold">Design, Website, Social Media and Digital Presence for Your Brand</h1>
+                <h1 class="text-white text-[30px] lg:text-[60px] font-bold">Design, Website, Social Media and Digital Presence for Your Brand</h1>
             </div>
         </div>
 
@@ -42,7 +53,7 @@
             <div class="col-span-3">
                 <hr>
             </div>
-            <div class="col-span-2">
+            <div class="col-span-5 md:col-span-3 lg:col-span-2">
                 <div class="grid grid-cols-2 items-center">
                     <span class="flex h-3 w-3 col-span-1">
                         <span class="animate-ping absolute inline-flex h-3 w-3 rounded-full bg-white opacity-75"></span>
@@ -57,7 +68,7 @@
     </section> 
         <!-- Section About (Home) -->
         <div class="grid grid-cols-12 items-center mt-20">
-            <div class="col-start-7 col-span-2 text-right mr-[-70px]">
+            <div class="col-start-4 lg:col-start-7 lg:col-span-2 col-span-4 text-right mr-[-30px] lg:mr-[-75px]">
                 <h2 class="text-white font-bold text-[24px]">Who is Diferso ?</h2>
             </div>
             <div class="col-start-9">
@@ -357,5 +368,6 @@
             </div>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
